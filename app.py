@@ -9,14 +9,8 @@ import efficientnet.tfkeras as efn
 st.title('Plant Disease Detection')
 st.write('Just upload your Plant\'s Leaf!')
 
-# In case of GPU issues:
-# gpus = tf.config.experimental.list_physical_devices('GPU')
 
-# if gpus:
-#     tf.config.experimental.set_memory_growth(gpus[0], True)
-
-# Loading model
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('./model.h5')
 
 # Upload the image
 uploaded_file = st.file_uploader('Choose your image', type=['png', 'jpg'])
