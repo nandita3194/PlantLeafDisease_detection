@@ -1,6 +1,7 @@
 h5py==2.10.0
 numpy==1.18.3
 pandas==1.0.3
+click<=8.0.4
 streamlit==0.57.3
 tensorflow==2.0.3
 tensorflow-estimator==2.0.0
