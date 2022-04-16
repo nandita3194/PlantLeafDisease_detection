@@ -5,9 +5,9 @@ from PIL import Image
 import tensorflow as tf
 #import efficientnet.tfkeras as efn
 import os
-print("-----------------------------")°
+print("-----------------------------")
 print(os.getcwd())
-print("-----------------------------")°
+print("-----------------------------")
 # Title and Description
 st.title('Plant Disease Detection')
 st.write('Just upload your Plant\'s Leaf!')
