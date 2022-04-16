@@ -13,7 +13,7 @@ st.title('Plant Disease Detection')
 st.write('Just upload your Plant\'s Leaf!')
 
 
-model = tf.keras.models.load_model('/app/plantleafdisease_detection/model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 # Upload the image
 uploaded_file = st.file_uploader('Choose your image', type=['png', 'jpg'])
