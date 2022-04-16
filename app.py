@@ -3,7 +3,8 @@ import io
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-#import efficientnet.tfkeras as efn
+import efficientnet.tfkeras
+
 import os
 print("\n\n\n\n")
 print(os.listdir(os.getcwd()))
