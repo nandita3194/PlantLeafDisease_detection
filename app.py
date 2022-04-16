@@ -3,7 +3,7 @@ import io
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-import efficientnet.tfkeras as efn
+#import efficientnet.tfkeras as efn
 
 # Title and Description
 st.title('Plant Disease Detection')
