@@ -6,20 +6,21 @@ import tensorflow as tf
 import efficientnet.tfkeras
 
 import os
-print("\n\n\n\n")
-print(os.listdir(os.getcwd()))
-print("\n\n\n\n")
+#### For debug
+# print("\n\n\n\n")
+# print(os.listdir(os.getcwd()))
+# print("\n\n\n\n")
+
 # Title and Description
 st.title('Plant Disease Detection')
 st.write('Just upload your Plant\'s Leaf!')
-
 
 model = tf.keras.models.load_model('model.h5')
 
 # Upload the image
 uploaded_file = st.file_uploader('Choose your image', type=['png', 'jpg'])
 
-predictions_map = {0:'is healthy', 1:'Has disease (Scap)'}
+predictions_map = {0:'is Healthy', 1:'Has disease (Scab)'}
 
 if uploaded_file is not None:
     image = Image.open(io.BytesIO(uploaded_file.read()))
