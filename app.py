@@ -31,12 +31,11 @@ if uploaded_file is not None:
     # Getting the predictions from the model
     predictions_arr = model.predict(image_batch)
     predictions = np.argmax(predictions_arr)
-    st.success(predictions_arr)
-    st.success(predictions)
-    print(predictions)
-    print(predictions_arr)
-    result_text = f'The plant leaf {predictions_map[predictions]} with {int(predictions_arr[0][predictions]*100)}% probability'
-
+    
+    if predictions>=1:
+        predictions =1
+    result_text = f'The plant leaf {predictions_map[predictions]}'
+    
     if predictions == 0:
         st.success(result_text)
     else:
